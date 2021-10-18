@@ -25,7 +25,7 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <PrivateRoute path="/specialists">
+            <PrivateRoute exact path="/specialists">
               <Specialists></Specialists>
             </PrivateRoute>
             <Route path="/login">
@@ -34,10 +34,10 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <PrivateRoute path="/user">
+            <PrivateRoute exact path="/user">
               <UserAccount></UserAccount>
             </PrivateRoute>
-            <PrivateRoute path="/:serviceName">
+            <PrivateRoute exact path="/service/:serviceName">
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <Route path="*">

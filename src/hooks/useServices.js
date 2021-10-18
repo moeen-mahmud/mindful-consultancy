@@ -4,7 +4,7 @@ const useServices = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(`./serviceData.json`, {
+    fetch(`/serviceData.json`, {
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",

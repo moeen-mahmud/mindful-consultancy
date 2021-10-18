@@ -23,15 +23,6 @@ const useFirebase = () => {
   const signInUsingGoogle = () => {
     setIsLoading(true);
     return signInWithPopup(auth, googleProvider);
-    // .then((result) => {
-    //   setUser(result.user);
-    //   console.log(result.user);
-    // })
-    // .catch((error) => {
-    //   console.log(error.message);
-    //   setError(error.message);
-    // })
-    // .finally(setIsLoading(false));
   };
 
   const createUser = (name, email, password) => {
@@ -39,7 +30,6 @@ const useFirebase = () => {
       .then((result) => {
         setUser(result.user);
         updateUserProfile(name);
-        console.log(result.user);
       })
       .catch((error) => {
         console.log(error.message);

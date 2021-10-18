@@ -34,7 +34,6 @@ const Login = () => {
       setEmailError("");
     }
     processLogin(email, password);
-
     history.push(redirectUrl);
   };
   const handleGoogleSignIn = () => {
