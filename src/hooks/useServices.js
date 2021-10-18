@@ -19,17 +19,6 @@ const useServices = () => {
       });
   }, []);
 
-  // fetch(`./fr.json`, {
-  //   headers: {
-  //     "Content-Type": "application/json",
-  //     Accept: "application/json",
-  //   },
-  // })
-  //   .then((response) => response.json())
-  //   .then((messages) => {
-  //     console.log("messages");
-  //   });
-
   return [services];
 };
 

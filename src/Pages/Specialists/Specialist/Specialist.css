@@ -1,0 +1,39 @@
+.specialist {
+  margin-top: 3rem;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  border-bottom: 1px solid #b1afaf;
+}
+
+.specialist > img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.ratings {
+  color: #dba929;
+}
+
+.service-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.specialist-service-list {
+  margin: 2rem 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+.service-list > span {
+  line-height: 0;
+  background-color: #5a46e5;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fefeff;
+}

@@ -1,0 +1,10 @@
+.specialists {
+  margin: 4rem 0;
+  padding: 0 4rem;
+}
+
+.specialists > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #5a46e5;
+}

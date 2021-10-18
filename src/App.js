@@ -5,11 +5,11 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
 import Specialists from "./Pages/Specialists/Specialists/Specialists";
 import ServiceDetails from "./Pages/Home/Services/ServiceDetails/ServiceDetails";
-import SelfTest from "./Pages/SelfTest/SelfTest";
 import Login from "./Pages/User/Login/Login";
 import Register from "./Pages/User/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
 import ContextProvider from "./context/ContextProvider";
+import UserAccount from "./Pages/User/UserAccount/UserAccount";
 
 function App() {
   return (
@@ -27,9 +27,6 @@ function App() {
             <Route path="/specialists">
               <Specialists></Specialists>
             </Route>
-            <Route path="/self-test">
-              <SelfTest></SelfTest>
-            </Route>
             <Route path="/login">
               <Login></Login>
             </Route>
@@ -38,6 +35,9 @@ function App() {
             </Route>
             <Route path="/:serviceName">
               <ServiceDetails></ServiceDetails>
+            </Route>
+            <Route path="/user/:userName">
+              <UserAccount></UserAccount>
             </Route>
             <Route path="*">
               <NotFound></NotFound>
