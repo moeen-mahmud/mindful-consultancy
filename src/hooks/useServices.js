@@ -1,8 +1,11 @@
+// Importing necessary hooks
 import { useEffect, useState } from "react";
 
+// The useService hook
 const useServices = () => {
   const [services, setServices] = useState([]);
 
+  //Fetching service data
   useEffect(() => {
     fetch(`/serviceData.json`, {
       headers: {

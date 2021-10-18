@@ -1,8 +1,11 @@
+// Importing necessary hooks
 import { useEffect, useState } from "react";
 
+//The useSpecialists hook for loading each specialist
 const useSpecialists = () => {
   const [specialists, setSpecialists] = useState([]);
 
+  //Fetching specialist data
   useEffect(() => {
     fetch(`./specialistData.json`, {
       headers: {
