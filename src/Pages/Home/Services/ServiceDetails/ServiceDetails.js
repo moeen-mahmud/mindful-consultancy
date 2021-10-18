@@ -4,10 +4,12 @@ import { ServiceContext } from "../../../../context/ContextProvider";
 import SingleService from "../SingleService/SingleService";
 
 const ServiceDetails = () => {
-  const { serviceId } = useParams();
+  const { serviceName } = useParams();
   const [services] = useContext(ServiceContext);
 
-  const filterService = services.filter((service) => service.id === serviceId);
+  const filterService = services.filter(
+    (service) => service.serviceName === serviceName
+  );
 
   return (
     <div className="serviceDetails">
