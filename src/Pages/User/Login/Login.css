@@ -1,0 +1,44 @@
+.login {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.login-card > h1 {
+  font-size: 2.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.form > input {
+  margin-bottom: 1rem;
+  padding: 12px 1rem;
+  border: none;
+}
+
+.btn-login {
+  padding: 12px 2rem;
+}
+
+.form-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
