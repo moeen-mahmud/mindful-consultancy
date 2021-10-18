@@ -1,0 +1,52 @@
+.header {
+  padding: 2rem 3rem;
+}
+
+.header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #232832;
+}
+
+.nav-brand > a {
+  font-family: "Baloo 2", cursive;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.hl-text {
+  color: #5a46e5;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links > a {
+  padding: 12px 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-links > .active {
+  color: #fefeff;
+  background-color: #5a46e5;
+  border-radius: 5px;
+}
+
+.nav-links > a:active {
+  background-color: #3d25db;
+  color: #fefeff;
+}
+
+.btn-header {
+  padding: 12px 1.5rem;
+}
+
+/* #5A46E5 */
