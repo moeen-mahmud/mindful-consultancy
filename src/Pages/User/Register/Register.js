@@ -4,8 +4,8 @@ import useAuth from "../../../hooks/useAuth";
 import useValidation from "../../../hooks/useValidation";
 
 const Register = () => {
-  const { signInUsingGoogle, createUser } = useAuth();
-  const { isMail } = useValidation();
+  const { signInUsingGoogle, createUser, error } = useAuth();
+  const { isMail, isPassword } = useValidation();
 
   const location = useLocation();
   const history = useHistory();
@@ -16,6 +16,7 @@ const Register = () => {
   const [password, setPassword] = useState("");
 
   const [emailError, setEmailError] = useState("");
+  const [passError, setPassError] = useState("");
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -35,6 +36,13 @@ const Register = () => {
       return;
     } else {
       setEmailError("");
+    }
+
+    if (!isPassword(password)) {
+      setPassError("Please enter a strong password!");
+      return;
+    } else {
+      setPassError("");
     }
 
     createUser(name, email, password);
@@ -78,6 +86,8 @@ const Register = () => {
             minLength="6"
             required
           />
+          <span className="error-msg">{passError}</span>
+          <span className="error-msg">{error}</span>
           <button className="btn btn-login" type="submit">
             Sign Up
           </button>

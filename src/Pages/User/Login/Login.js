@@ -4,7 +4,7 @@ import useAuth from "../../../hooks/useAuth";
 import useValidation from "../../../hooks/useValidation";
 import "./Login.css";
 const Login = () => {
-  const { signInUsingGoogle, processLogin } = useAuth();
+  const { signInUsingGoogle, processLogin, error } = useAuth();
   const { isMail } = useValidation();
 
   const location = useLocation();
@@ -64,6 +64,7 @@ const Login = () => {
             minLength="6"
             required
           />
+          <span className="error-msg">{error}</span>
           <button className="btn btn-login" type="submit">
             Sign In
           </button>
