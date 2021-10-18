@@ -1,5 +1,10 @@
+// Importing React Router Dom
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+//Importing stylesheet
 import "./App.css";
+
+// Importing Components
 import Header from "./Pages/Shared/Header/Header";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
@@ -13,6 +18,7 @@ import UserAccount from "./Pages/User/UserAccount/UserAccount";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 import SelfTest from "./Pages/SelfTest/SelfTest";
 
+// Main App Component
 function App() {
   return (
     <div>
