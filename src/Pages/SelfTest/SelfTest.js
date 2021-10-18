@@ -1,6 +1,8 @@
+// Imporing necessary files
 import React from "react";
 import "./SelfTest.css";
 
+// Main Self Test Component
 const SelfTest = () => {
   return (
     <div className="self-test">

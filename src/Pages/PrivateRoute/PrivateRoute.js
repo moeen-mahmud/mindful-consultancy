@@ -1,7 +1,10 @@
+// Importing necessary files
 import React from "react";
 import { Redirect, Route } from "react-router";
 import useAuth from "../../hooks/useAuth";
 import Spinner from "../../utilities/Spinner/Spinner";
+
+// Set up private route
 const PrivateRoute = ({ children, ...rest }) => {
   const { user, isLoading } = useAuth();
 

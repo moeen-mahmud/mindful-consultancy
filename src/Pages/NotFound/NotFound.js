@@ -1,5 +1,7 @@
 import React from "react";
 import "./NotFound.css";
+
+// Main NotFound Component
 const NotFound = () => {
   return (
     <div className="not-found">
