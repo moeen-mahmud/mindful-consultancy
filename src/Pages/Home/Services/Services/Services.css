@@ -21,3 +21,19 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 668px) {
+  .services > h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .services > p {
+    font-size: 14px;
+  }
+
+  .all-services {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
