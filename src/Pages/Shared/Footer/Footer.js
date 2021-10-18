@@ -1,9 +1,73 @@
+import {
+  faInstagram,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
+  const youtubeIcon = <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>;
+  const twitterIcon = <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>;
+  const instagramIcon = <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>;
+
   return (
-    <div>
-      <h1>This is footer</h1>
+    <div className="footer">
+      <div className="quick-links">
+        <section>
+          <p>
+            <span className="hl-text">Mindful</span> Consultancy
+          </p>
+          <div className="social-links">
+            <p>Get in touch</p>
+            <ul>
+              <li>
+                <a href="/">{youtubeIcon}</a>
+              </li>
+              <li>
+                <a href="/">{twitterIcon}</a>
+              </li>
+              <li>
+                <a href="/">{instagramIcon}</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <ul>
+            <h4 className="hl-text">Advantages</h4>
+            <li>Professional Online Counseling</li>
+            <li>Anonymous and Secure</li>
+            <li>Experienced Psychologist</li>
+            <li>
+              Zero Waiting Time <span className="hl-text">Start Now!</span>
+            </li>
+          </ul>
+          <ul>
+            <h4 className="hl-text">Informations</h4>
+            <li>Our Missions</li>
+            <li>Apply as a psychologist</li>
+            <li>Service to business</li>
+          </ul>
+          <ul>
+            <h4 className="hl-text">Psychology Companion</h4>
+            <li>Get help</li>
+            <li>Psychological Self Test</li>
+            <li>Online Psychology Magazine</li>
+          </ul>
+        </section>
+      </div>
+      <div className="terms-area">
+        <section>
+          <small>copyright &copy; 2021 Mindful Consultancy LLC</small>
+        </section>
+        <section>
+          <span>Privacy Policy</span>
+          <span>Terms of Use</span>
+          <span>Support</span>
+        </section>
+      </div>
     </div>
   );
 };

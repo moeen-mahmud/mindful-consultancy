@@ -10,3 +10,7 @@
 .btn:active {
   background-color: #3d25db;
 }
+
+li {
+  list-style: none;
+}
