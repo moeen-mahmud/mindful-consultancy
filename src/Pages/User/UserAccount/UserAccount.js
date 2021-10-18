@@ -4,10 +4,13 @@ import "./UserAccount.css";
 
 const UserAccount = () => {
   const { user } = useAuth();
-  console.log(user);
   return (
-    <div classkName="user-area">
-      {user.photoURL && <img src={user.photoURL} alt={user.displayName} />}
+    <div className="user-area">
+      {user.photoURL ? (
+        <img src={user.photoURL} alt={user.displayName} />
+      ) : (
+        <span className="user-avatar">{user.displayName.slice(0, 1)}</span>
+      )}
       <h1>
         Hello <span className="hl-text">{user.displayName}</span>
       </h1>

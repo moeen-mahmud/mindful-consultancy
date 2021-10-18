@@ -33,15 +33,14 @@ const Login = () => {
     } else {
       setEmailError("");
     }
-
     processLogin(email, password);
-    setEmail("");
-    setPassword("");
+
+    history.push(redirectUrl);
   };
   const handleGoogleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
-        console.log(result.user);
+        history.push(redirectUrl);
       })
       .catch((error) => console.log(error.message));
   };

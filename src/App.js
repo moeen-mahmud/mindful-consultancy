@@ -10,6 +10,7 @@ import Register from "./Pages/User/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
 import ContextProvider from "./context/ContextProvider";
 import UserAccount from "./Pages/User/UserAccount/UserAccount";
+import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -24,21 +25,21 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/specialists">
+            <PrivateRoute path="/specialists">
               <Specialists></Specialists>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/user">
+            <PrivateRoute path="/user">
               <UserAccount></UserAccount>
-            </Route>
-            <Route path="/:serviceName">
+            </PrivateRoute>
+            <PrivateRoute path="/:serviceName">
               <ServiceDetails></ServiceDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>
