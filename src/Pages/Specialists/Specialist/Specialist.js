@@ -1,9 +1,12 @@
+// Importing necessary files
 import React, { useContext } from "react";
 import Rating from "react-rating";
 import { ServiceContext } from "../../../context/ContextProvider";
 import "./Specialist.css";
 
+// Main Specialist component
 const Specialist = (props) => {
+  //Getting data from props
   const {
     specialistName,
     specialistImage,
@@ -12,8 +15,10 @@ const Specialist = (props) => {
     reviewCount,
   } = props.specialist;
 
+  //Getting service data (again!) from service context
   const [services] = useContext(ServiceContext);
 
+  //Filtering out correspondence services
   const filterService = services.filter(
     (service) => service.specialistName === specialistName
   );
