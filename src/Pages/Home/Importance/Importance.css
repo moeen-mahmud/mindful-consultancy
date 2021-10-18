@@ -24,3 +24,27 @@
   font-weight: 600;
   font-size: 1.3rem;
 }
+
+@media only screen and (min-width: 350px) and (max-width: 668px) {
+  .importance {
+    padding: 0 10px;
+  }
+  .importance > h1 {
+    font-size: 1.7rem;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .importance > .about-content > img {
+    width: 100%;
+  }
+
+  .importance > .about-content > p {
+    text-align: justify;
+    padding: 0 12px;
+  }
+}
