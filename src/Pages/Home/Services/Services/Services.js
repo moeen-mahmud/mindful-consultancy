@@ -1,12 +1,11 @@
-import React from "react";
-import useServices from "../../../../hooks/useServices";
+import React, { useContext } from "react";
+import { ServiceContext } from "../../../../context/ContextProvider";
 import Service from "../Service/Service";
 import "./Services.css";
 
 const Services = () => {
-  const [services] = useServices();
+  const [services] = useContext(ServiceContext);
 
-  console.log(services.map((service) => service));
   return (
     <div className="services">
       <h1>Choose your desired service</h1>

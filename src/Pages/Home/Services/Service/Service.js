@@ -1,8 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router";
 import "./Service.css";
 
 const Service = (props) => {
   const { id, serviceName, serviceImage, serviceShortDesc } = props.service;
+  const history = useHistory();
+
+  const handleDetailsBtn = () => {
+    history.push(`/${id}`);
+  };
 
   return (
     <div className="service">
@@ -13,7 +19,9 @@ const Service = (props) => {
           <p>{serviceShortDesc}</p>
         </figcaption>
         <section className="btn-container">
-          <button className="btn btn-service">View Details</button>
+          <button onClick={handleDetailsBtn} className="btn btn-service">
+            View Details
+          </button>
         </section>
       </figure>
     </div>

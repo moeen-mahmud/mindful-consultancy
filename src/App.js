@@ -9,40 +9,43 @@ import SelfTest from "./Pages/SelfTest/SelfTest";
 import Login from "./Pages/User/Login/Login";
 import Register from "./Pages/User/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
+import ContextProvider from "./context/ContextProvider";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/services/:serviceId">
-            <ServiceDetails></ServiceDetails>
-          </Route>
-          <Route path="/specialists">
-            <Specialists></Specialists>
-          </Route>
-          <Route path="/self-test">
-            <SelfTest></SelfTest>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <ContextProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/:serviceId">
+              <ServiceDetails></ServiceDetails>
+            </Route>
+            <Route path="/specialists">
+              <Specialists></Specialists>
+            </Route>
+            <Route path="/self-test">
+              <SelfTest></SelfTest>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </ContextProvider>
     </div>
   );
 }
