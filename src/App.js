@@ -11,6 +11,7 @@ import NotFound from "./Pages/NotFound/NotFound";
 import ContextProvider from "./context/ContextProvider";
 import UserAccount from "./Pages/User/UserAccount/UserAccount";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
+import SelfTest from "./Pages/SelfTest/SelfTest";
 
 function App() {
   return (
@@ -28,12 +29,15 @@ function App() {
             <PrivateRoute exact path="/specialists">
               <Specialists></Specialists>
             </PrivateRoute>
-            <Route path="/login">
+            <Route exact path="/login">
               <Login></Login>
             </Route>
-            <Route path="/register">
+            <Route exact path="/register">
               <Register></Register>
             </Route>
+            <PrivateRoute exact path="/self-test">
+              <SelfTest></SelfTest>
+            </PrivateRoute>
             <PrivateRoute exact path="/user">
               <UserAccount></UserAccount>
             </PrivateRoute>

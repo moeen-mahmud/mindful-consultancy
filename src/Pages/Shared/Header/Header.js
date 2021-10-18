@@ -22,7 +22,7 @@ const Header = () => {
         <div className="nav-links">
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/specialists">Specialists</NavLink>
-          <NavLink to="/user">My Account</NavLink>
+          <NavLink to="/self-test">Test</NavLink>
           {user.email ? (
             <>
               <Link to="/user">{user.displayName}</Link>
