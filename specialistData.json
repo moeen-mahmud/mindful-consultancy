@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "specialistName": "Dr. Stuart John",
+    "specialistImage": "https://i.ibb.co/dftnwT4/specialist-1.jpg",
+    "SpecialistAbout": "Initiating contact with a counselor may not be easy, but it is a step forward. It can bring significant changes to your concern. In my experience of counselling individuals going through personal challenges, I've come to believe that each session moves you from that place of worry and doubt into gaining self-confidence and pursuing goals.",
+    "specialistRating": 4.5,
+    "reviewCount": 40
+  },
+  {
+    "id": 1,
+    "specialistName": "Dr. Stuart John",
+    "specialistImage": "https://i.ibb.co/dftnwT4/specialist-1.jpg",
+    "SpecialistAbout": "Initiating contact with a counselor may not be easy, but it is a step forward. It can bring significant changes to your concern. In my experience of counselling individuals going through personal challenges, I've come to believe that each session moves you from that place of worry and doubt into gaining self-confidence and pursuing goals.",
+    "specialistRating": 4.5,
+    "reviewCount": 40
+  },
+  {
+    "id": 2,
+    "specialistName": "Dr. Andress Paulo, PhD",
+    "specialistImage": "https://i.ibb.co/BNyS7h7/specialist-2.jpg",
+    "SpecialistAbout": "I am a clinical psychologist specializing in: Children, adolescents, adults as well as with families and couples. Trained in systemic therapy with a long clinical and therapeutic experience. My long intercultural journey has allowed me to have an open vision around human issues and to listen attentively and sensitively the people I receive.",
+    "specialistRating": 4,
+    "reviewCount": 30
+  },
+  {
+    "id": 3,
+    "specialistName": "Dr. Dimitra Cravchenko",
+    "specialistImage": "https://i.ibb.co/PtLx4Zb/specialist-3.jpg",
+    "SpecialistAbout": "‘If I can accept what I cannot change, find the courage to do change the things that I can and cultivate my wisdom to know the difference, then I will find serenity’ (my paraphrasing of ‘Serenity Prayer’ by Nieburh) See more about me here: www.nicholassarantakis.com",
+    "specialistRating": 4.8,
+    "reviewCount": 8
+  }
+]

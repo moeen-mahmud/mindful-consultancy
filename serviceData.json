@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "serviceName": "Relationship",
+    "serviceImage": "https://i.ibb.co/DYtmtxN/relationship-img.jpg",
+    "serviceShortDesc": "Psychological counselling supports you in learning how to deal withdifferent phases in life and relationships.",
+    "serviceLongDesc": "Partnership and sexuality are essential for our own well-being. Possible problems in this area of life can be very diverse. However, it is often assumed that love is either there or not.In fact, love is closely related to how two people interact with each other. Especially this aspect is addressed within online counselling in case of partnership conflicts. You will be supported in developing and using strategies for an appreciative way of interacting with each other.",
+    "price": 1024
+  },
+  {
+    "id": 2,
+    "serviceName": "Depression",
+    "serviceImage": "https://i.ibb.co/1s8C4Rf/depression-img.jpg",
+    "serviceShortDesc": "Psychological counselling helps you to feel the joy of life again and to overcome negative thoughts.",
+    "serviceLongDesc": "People who suffer from depressive moods struggle with various symptoms such as sleep disorders, loss of appetite, negative mood or listlessness. Although depressive moods are very widespread, those affected are often mistakenly confronted with the prejudice of being lazy. This can contribute to the fact that the first step to seeking professional help feels very shameful and therefore requires great effort to overcome that.",
+    "price": 3012
+  },
+  {
+    "id": 3,
+    "serviceName": "Self Esteem",
+    "serviceImage": "https://i.ibb.co/SB88pHg/self-esteem-img.jpg",
+    "serviceShortDesc": "Self-esteem training helps you to control your critics whilst simultaneously developing an affectionate relationship with yourself.",
+    "serviceLongDesc": "Low self-esteem can have a very negative influence on your ability to function in both private and professional settings – be it, for example, in relation to entering into unfulfilling, energy-draining relationships or forever struggling with self-critical, derogatory thoughts in challenging situations. The good news is that self-esteem can be trained, just as, for example, an instrument can be practised till the ability to play it is improved – if you practise diligently. Psychological counselling by an experienced psychologist is a good option for training your own self-esteem.",
+    "price": 2055
+  },
+  {
+    "id": 4,
+    "serviceName": "Family",
+    "serviceImage": "https://i.ibb.co/q971CLz/family-img.jpg",
+    "serviceShortDesc": "Psychological counselling can support you towards understanding the system family and strengthening relationship.",
+    "serviceLongDesc": "Everyday life as mother and father can push us to our limits, at least some times. Reaching a new stage in the development usually means a reorientation of the whole family system. Some stages are predictable (school entry for instance) whilst others can be unexpected challenges, such as breakup or divorce.",
+    "price": 4078
+  },
+  {
+    "id": 5,
+    "serviceName": "Anxiety",
+    "serviceImage": "https://i.ibb.co/ccMXQYX/anxiety-img.jpg",
+    "serviceShortDesc": "Psychological counselling helps you to learn how to deal with your anxieties and to master seemingly unmanageable situations with the help of concrete strategies..",
+    "serviceLongDesc": "Fears can occur in very different forms: in social situations (eating in front of others, speaking, writing, etc.) or in certain places (e.g. public transport or places with many people). Anxiety can significantly reduce the quality of life to the extent that those affected even wish they no longer felt any fear at all. The life-saving function of anxiety is usually forgotten due to the high level of emotional suffering: It leads to an enormous increase in attention and performance, which enables us to react with lightning speed in dangerous situations. In the case of an anxiety disorder, however, the anxiety misses its actual function, in which an actually harmless situation is classified as life-threatening and the body switches to alarm readiness.",
+    "price": 2024
+  },
+  {
+    "id": 6,
+    "serviceName": "Stress and Performance",
+    "serviceImage": "https://i.ibb.co/tmPgfDM/stress-and-performance-img.jpg",
+    "serviceShortDesc": "Psychological counselling helps you to see stress as a driving force again and fosters your ability to relax.",
+    "serviceLongDesc": "People under stress often link stress per se with increasing pressure , lack of time for what matters, restlessness, etc. Long-term stress can indeed also lead to a variety of physical illnesses, albeit stress can also be associated with enjoyment of and enthusiasm for activities that have to be completed within a given time.",
+    "price": 3024
+  }
+]
