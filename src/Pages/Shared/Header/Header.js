@@ -1,11 +1,15 @@
+// Importing necessary files
 import React from "react";
 import { Link, NavLink, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Header.css";
 
+// Main Header Component
 const Header = () => {
+  //Getting data from useAuth hook
   const { user, logOut } = useAuth();
 
+  //Setup redirecting
   const history = useHistory();
   const handleHeaderBtn = () => {
     history.push("/login");
