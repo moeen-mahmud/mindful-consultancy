@@ -39,10 +39,9 @@ const useFirebase = () => {
   const createUser = (name, email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        setUser(result.user);
-
         //Updating user profile with given data
         updateUserProfile(name);
+        setUser(result.user);
         setError(null);
       })
       .catch((error) => {
