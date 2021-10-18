@@ -22,6 +22,7 @@
   gap: 3rem;
 }
 
+/* Media Queries */
 @media only screen and (min-width: 350px) and (max-width: 668px) {
   .services > h1 {
     font-size: 2rem;

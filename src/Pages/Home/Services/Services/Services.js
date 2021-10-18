@@ -1,9 +1,12 @@
+// Importing necessary files
 import React, { useContext } from "react";
 import { ServiceContext } from "../../../../context/ContextProvider";
 import Service from "../Service/Service";
 import "./Services.css";
 
+// Main Services Component
 const Services = () => {
+  //Getting services from service context
   const [services] = useContext(ServiceContext);
 
   return (

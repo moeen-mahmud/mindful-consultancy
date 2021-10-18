@@ -1,15 +1,20 @@
+// Importing necessary files
 import React from "react";
 import { useHistory } from "react-router";
 import "./SingleService.css";
 
+// Main Single Service Component
 const SingleService = (props) => {
+  //Getting data from props
   const { serviceName, serviceLongDesc, serviceImage, specialistName, price } =
     props.serv;
 
+  //Function for back button
   const history = useHistory();
   const handleBackBtn = () => {
     history.push("/");
   };
+
   return (
     <div className="single-service">
       <section>

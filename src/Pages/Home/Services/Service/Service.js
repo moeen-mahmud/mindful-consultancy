@@ -1,11 +1,15 @@
+// Importing necessary files
 import React from "react";
 import { useHistory } from "react-router";
 import "./Service.css";
 
+// Main Service component
 const Service = (props) => {
+  //Reading props
   const { serviceName, serviceImage, serviceShortDesc } = props.service;
-  const history = useHistory();
 
+  //Function for getting each services by its name
+  const history = useHistory();
   const handleDetailsBtn = () => {
     history.push(`/service/${serviceName}`);
   };
