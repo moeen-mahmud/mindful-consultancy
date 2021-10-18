@@ -8,6 +8,7 @@ import Spinner from "../../utilities/Spinner/Spinner";
 const PrivateRoute = ({ children, ...rest }) => {
   const { user, isLoading } = useAuth();
 
+  //Set up a loading spinner for waiting to finish the reload
   if (isLoading) {
     return <Spinner></Spinner>;
   }

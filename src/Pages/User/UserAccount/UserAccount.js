@@ -1,8 +1,11 @@
+//Importing necessary files
 import React from "react";
 import useAuth from "../../../hooks/useAuth";
 import "./UserAccount.css";
 
+// Main UserAccount Component
 const UserAccount = () => {
+  //Getting the user from userAuth hook
   const { user } = useAuth();
   return (
     <div className="user-area">

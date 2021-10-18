@@ -1,36 +1,51 @@
+// Importing necessary files
 import React, { useState } from "react";
 import { Link, useLocation, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import useValidation from "../../../hooks/useValidation";
 
+// Main Register Component
 const Register = () => {
+  //Getting user authentication support from useAuth Hook
   const { signInUsingGoogle, createUser, error } = useAuth();
+
+  //Getting form validation process from useValidation hook
   const { isMail, isPassword } = useValidation();
 
+  //Setting up redirect url
   const location = useLocation();
   const history = useHistory();
   const redirectUrl = location.state?.from || "/";
 
+  //Get and set necessary user data
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  //Set states for errors
   const [emailError, setEmailError] = useState("");
   const [passError, setPassError] = useState("");
 
+  //Getting values from user name input
   const handleNameChange = (e) => {
     setName(e.target.value);
   };
+
+  //Getting values from password input
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
+
+  //Getting values from password input
   const handlePassChange = (e) => {
     setPassword(e.target.value);
   };
 
+  //Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    //Checking for valid mail
     if (!isMail(email)) {
       setEmailError("Please enter a valid email address!");
       return;
@@ -38,6 +53,7 @@ const Register = () => {
       setEmailError("");
     }
 
+    //Checking for valid password
     if (!isPassword(password)) {
       setPassError("Please enter a strong password!");
       return;
@@ -45,10 +61,14 @@ const Register = () => {
       setPassError("");
     }
 
+    //Create the user
     createUser(name, email, password);
+
+    //Redirect the user
     history.push(redirectUrl);
   };
 
+  //Function for Google Sign In
   const handleGoogleSignIn = () => {
     signInUsingGoogle()
       .then((result) => {
