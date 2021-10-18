@@ -7,7 +7,7 @@ const Service = (props) => {
   const history = useHistory();
 
   const handleDetailsBtn = () => {
-    history.push(`/services/${serviceName}`);
+    history.push(`/${serviceName}`);
   };
 
   return (

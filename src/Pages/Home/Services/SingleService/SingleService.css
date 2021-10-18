@@ -1,0 +1,33 @@
+.single-service {
+  margin: 2rem 0;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.single-service > section > img {
+  border-radius: 5px;
+}
+
+.service-title {
+  color: #5a46e5;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.service-desc {
+  font-weight: 500;
+  line-height: 2;
+}
+
+.service-specialist {
+  font-weight: 700;
+}
+
+.service-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
