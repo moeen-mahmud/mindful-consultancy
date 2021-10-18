@@ -1,0 +1,23 @@
+.services {
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.services > h1 {
+  font-size: 2.5rem;
+  line-height: 0;
+}
+
+.services > p {
+  padding: 1rem 0;
+  color: #5a46e5;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.all-services {
+  padding: 3rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}

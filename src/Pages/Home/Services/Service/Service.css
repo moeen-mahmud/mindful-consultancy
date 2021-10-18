@@ -1,0 +1,38 @@
+.service {
+  box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.service:hover .service-img {
+  filter: brightness(40%);
+  transform: scale(1.1);
+}
+
+.service-img {
+  width: 100%;
+  filter: brightness(80%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-card {
+  margin: 0;
+  padding: 0;
+}
+
+.service-content {
+  padding: 1rem;
+  height: 180px;
+}
+
+.btn-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-service {
+  padding: 12px 2rem;
+}
