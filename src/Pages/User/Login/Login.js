@@ -1,14 +1,50 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import useValidation from "../../../hooks/useValidation";
 import "./Login.css";
 const Login = () => {
+  const { signInUsingGoogle, processLogin } = useAuth();
+  const { isMail } = useValidation();
+
+  const location = useLocation();
+  const history = useHistory();
+  const redirectUrl = location.state?.from || "/";
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const [emailError, setEmailError] = useState("");
-  const [passError, setPassError] = useState("");
-  const error = "";
-  const handleEmailChange = (e) => {};
-  const handlePassChange = (e) => {};
-  const handleSubmit = () => {};
-  const handleGoogleSignIn = () => {};
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePassChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!isMail(email)) {
+      setEmailError("Please enter a valid email address!");
+      return;
+    } else {
+      setEmailError("");
+    }
+
+    processLogin(email, password);
+    setEmail("");
+    setPassword("");
+  };
+  const handleGoogleSignIn = () => {
+    signInUsingGoogle()
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => console.log(error.message));
+  };
   return (
     <div className="login">
       <div className="login-card">
@@ -30,8 +66,6 @@ const Login = () => {
             minLength="6"
             required
           />
-          <span className="error-msg">{passError}</span>
-          <span className="error-msg">{error}</span>
           <button className="btn btn-login" type="submit">
             Sign In
           </button>

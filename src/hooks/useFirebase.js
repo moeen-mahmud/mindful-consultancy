@@ -15,24 +15,23 @@ initializeAuthentication();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
-  const [isLoding, setIsLoading] = useState(true);
-  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
   const signInUsingGoogle = () => {
-    setIsLoading(false);
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUser(result.user);
-        console.log(result.user);
-      })
-      .catch((error) => {
-        console.log(error.message);
-        setError(error.message);
-      })
-      .finally(setIsLoading(false));
+    setIsLoading(true);
+    return signInWithPopup(auth, googleProvider);
+    // .then((result) => {
+    //   setUser(result.user);
+    //   console.log(result.user);
+    // })
+    // .catch((error) => {
+    //   console.log(error.message);
+    //   setError(error.message);
+    // })
+    // .finally(setIsLoading(false));
   };
 
   const createUser = (name, email, password) => {
@@ -43,7 +42,6 @@ const useFirebase = () => {
         console.log(result.user);
       })
       .catch((error) => {
-        setError(error.message);
         console.log(error.message);
       })
       .finally(setIsLoading(false));
@@ -56,7 +54,6 @@ const useFirebase = () => {
         console.log(result.user);
       })
       .catch((error) => {
-        setError(error.message);
         console.log(error.message);
       })
       .finally(setIsLoading(false));
@@ -70,7 +67,6 @@ const useFirebase = () => {
         console.log(result);
       })
       .catch((error) => {
-        setError(error.message);
         console.log(error.message);
       });
   };
@@ -92,15 +88,13 @@ const useFirebase = () => {
       .then(() => {})
       .catch((error) => {
         console.log(error.message);
-        setError(error.message);
       })
       .finally(setIsLoading(false));
   };
 
   return {
     user,
-    error,
-    isLoding,
+    isLoding: isLoading,
     signInUsingGoogle,
     createUser,
     processLogin,
