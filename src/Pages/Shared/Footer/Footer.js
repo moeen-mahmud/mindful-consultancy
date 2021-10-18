@@ -1,12 +1,16 @@
+// Imporing fontawesome icons
 import {
   faInstagram,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// Imporing necessary files
 import React from "react";
 import "./Footer.css";
 
+// Main Footer Component
 const Footer = () => {
   const youtubeIcon = <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>;
   const twitterIcon = <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>;
