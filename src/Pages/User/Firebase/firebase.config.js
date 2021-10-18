@@ -1,3 +1,4 @@
+// Configuration file for firebase
 const firebaseConfig = {
   apiKey: "AIzaSyBH3NySGHAVm0CRy-aO8OuIrHoWKNPV7Kc",
   authDomain: "mindful-consultancy-moeen.firebaseapp.com",
