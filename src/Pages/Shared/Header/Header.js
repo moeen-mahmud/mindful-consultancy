@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import { Link, NavLink, useHistory } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import "./Header.css";
 
@@ -22,10 +22,10 @@ const Header = () => {
         <div className="nav-links">
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/specialists">Specialists</NavLink>
-          <NavLink to={`/user/${user.displayName}`}>My Account</NavLink>
+          <NavLink to="/user">My Account</NavLink>
           {user.email ? (
             <>
-              <NavLink to="/">{user.displayName}</NavLink>
+              <Link to="/user">{user.displayName}</Link>
               <button onClick={logOut} className="btn btn-header">
                 Logout
               </button>

@@ -1,0 +1,26 @@
+.importance {
+  margin: 6rem 0;
+  padding: 0 4rem;
+}
+
+.importance > h1 {
+  margin: 4rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.importance > .about-content > img {
+  width: 50%;
+}
+
+.importance > .about-content > p {
+  color: #232832;
+  line-height: 2;
+  font-weight: 600;
+  font-size: 1.3rem;
+}

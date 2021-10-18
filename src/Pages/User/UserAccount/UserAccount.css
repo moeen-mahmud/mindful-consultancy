@@ -1,0 +1,17 @@
+.user-area {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.user-area > img {
+  border-radius: 50%;
+}
+
+.user-avatar {
+  background-color: #5a46e5;
+  padding: 1rem 1.7rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: #fefeff;
+  font-weight: 700;
+}

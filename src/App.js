@@ -33,11 +33,11 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
+            <Route path="/user">
+              <UserAccount></UserAccount>
+            </Route>
             <Route path="/:serviceName">
               <ServiceDetails></ServiceDetails>
-            </Route>
-            <Route path="/user/:userName">
-              <UserAccount></UserAccount>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

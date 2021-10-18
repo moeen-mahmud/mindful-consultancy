@@ -1,0 +1,33 @@
+.reviews {
+  padding: 2rem;
+  text-align: center;
+}
+
+.reviews > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.user-review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 3rem;
+}
+
+.user-review > figure {
+  border-radius: 5px;
+  box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);
+  padding: 1rem;
+}
+
+.user-review > figure > img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.user-review > figure > figcaption > p {
+  text-align: justify;
+}
