@@ -1,0 +1,15 @@
+.not-found {
+  text-align: center;
+  min-height: 60vh;
+}
+
+.not-found > h1 {
+  font-size: 6rem;
+  line-height: 1;
+  color: #5a46e5;
+}
+
+.not-found > p {
+  font-size: 2rem;
+  font-weight: 600;
+}
