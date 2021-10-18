@@ -1,7 +1,9 @@
+// Importing necessary files
 import React from "react";
 import aboutImage from "../../../assets/about-img.jpg";
 import "./Importance.css";
 
+// Main Importance Component
 const Importance = () => {
   return (
     <div className="importance">

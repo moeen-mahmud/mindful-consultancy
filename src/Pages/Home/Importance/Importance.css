@@ -1,3 +1,4 @@
+/* Importance area styling */
 .importance {
   margin: 6rem 0;
   padding: 0 4rem;
@@ -25,6 +26,7 @@
   font-size: 1.3rem;
 }
 
+/* Media Queries */
 @media only screen and (min-width: 350px) and (max-width: 668px) {
   .importance {
     padding: 0 10px;
