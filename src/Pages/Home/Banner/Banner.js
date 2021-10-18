@@ -1,5 +1,10 @@
+// Importing necessary files
 import React from "react";
+
+// Importing stylesheet
 import "./Banner.css";
+
+// Main banner component
 const Banner = () => {
   return (
     <div className="banner">
