@@ -12,6 +12,7 @@ import "./Footer.css";
 
 // Main Footer Component
 const Footer = () => {
+  //Font awesome icon for social links
   const youtubeIcon = <FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>;
   const twitterIcon = <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>;
   const instagramIcon = <FontAwesomeIcon icon={faInstagram}></FontAwesomeIcon>;
