@@ -1,19 +1,13 @@
 // Importing necessary files
 import React, { useContext } from "react";
-import Rating from "react-rating";
 import { ServiceContext } from "../../../context/ContextProvider";
 import "./Specialist.css";
 
 // Main Specialist component
 const Specialist = (props) => {
   //Getting data from props
-  const {
-    specialistName,
-    specialistImage,
-    specialistAbout,
-    specialistRating,
-    reviewCount,
-  } = props.specialist;
+  const { specialistName, specialistImage, specialistAbout, reviewCount } =
+    props.specialist;
 
   //Getting service data (again!) from service context
   const [services] = useContext(ServiceContext);
@@ -31,16 +25,10 @@ const Specialist = (props) => {
         <p>{specialistAbout}</p>
         <div className="service-list">
           <div>
-            <Rating
-              emptySymbol="far fa-star ratings"
-              fullSymbol="fas fa-star ratings"
-              initialRating={specialistRating}
-              readonly
-            ></Rating>
             <p>
-              Rated: {reviewCount}{" "}
+              Total Enrolled: {reviewCount}{" "}
               <span>
-                <i className="fas fa-user"></i>
+                <i className="fas fa-user enrolled"></i>
               </span>
             </p>
             <h2 className="specialist-service-list">My Services</h2>
