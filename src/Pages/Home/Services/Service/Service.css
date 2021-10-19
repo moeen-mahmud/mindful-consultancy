@@ -36,3 +36,9 @@
 .btn-service {
   padding: 12px 2rem;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 668px) {
+  .btn-service {
+    margin-top: 2.5rem;
+  }
+}

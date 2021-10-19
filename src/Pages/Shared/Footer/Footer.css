@@ -64,7 +64,7 @@
 }
 
 /* Media Queries */
-@media only screen and (min-width: 350px) and (max-width: 668px) {
+@media only screen and (min-width: 300px) and (max-width: 668px) {
   .footer {
     padding: 3rem 10px;
   }
@@ -97,6 +97,12 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .terms-condition {
+    display: flex;
+    flex-direction: column;
+  }
+
   .terms-area > section > span {
     margin: 0;
     padding: 1rem;

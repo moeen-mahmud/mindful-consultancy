@@ -53,9 +53,17 @@ a {
 }
 
 /* Media queries */
-@media only screen and (min-width: 350px) and (max-width: 668px) {
+@media only screen and (min-width: 300px) and (max-width: 668px) {
   .header {
     padding: 14px 10px;
+  }
+
+  .header > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 
   .nav-brand > a {
@@ -63,7 +71,7 @@ a {
   }
 
   .nav-links {
-    gap: 10px;
+    gap: 0;
   }
 
   .nav-links > a {

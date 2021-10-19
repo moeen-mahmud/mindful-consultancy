@@ -9,7 +9,7 @@
   color: #5a46e5;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 668px) {
+@media only screen and (min-width: 300px) and (max-width: 668px) {
   .specialists {
     padding: 0 1rem;
   }

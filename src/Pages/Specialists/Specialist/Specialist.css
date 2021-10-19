@@ -38,7 +38,7 @@
   color: #fefeff;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 668px) {
+@media only screen and (min-width: 300px) and (max-width: 668px) {
   .specialist {
     display: flex;
     flex-direction: column;

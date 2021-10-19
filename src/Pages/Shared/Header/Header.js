@@ -20,13 +20,13 @@ const Header = () => {
       <nav>
         <div className="nav-brand">
           <NavLink to="/">
-            <span className="hl-text">Mindful</span>
+            <span className="hl-text">Mindful </span>Consultancy
           </NavLink>
         </div>
         <div className="nav-links">
           <NavLink to="/home">Home</NavLink>
           <NavLink to="/specialists">Specialists</NavLink>
-          <NavLink to="/self-test">Test</NavLink>
+          <NavLink to="/self-test">Tests</NavLink>
           {user.email ? (
             <>
               <Link to="/user">{user.displayName}</Link>

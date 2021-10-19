@@ -66,7 +66,7 @@ const Footer = () => {
         <section>
           <small>copyright &copy; 2021 Mindful Consultancy LLC</small>
         </section>
-        <section>
+        <section className="terms-condition">
           <span>Privacy Policy</span>
           <span>Terms of Use</span>
           <span>Support</span>
