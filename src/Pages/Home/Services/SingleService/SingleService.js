@@ -26,7 +26,7 @@ const SingleService = (props) => {
         <p className="service-specialist">Specialist: {specialistName}</p>
         <p className="service-value">Value: ${price}</p>
         <button onClick={handleBackBtn} className="btn btn-header">
-          Back to services
+          Back to home
         </button>
       </section>
     </div>
